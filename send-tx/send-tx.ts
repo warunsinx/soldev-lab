@@ -23,7 +23,7 @@ const toPubkey = new PublicKey(suppliedToPubkey);
 
 const connection = new Connection("https://api.devnet.solana.com", "confirmed");
 
-const LAMPORTS_TO_SEND = 5000;
+const LAMPORTS_TO_SEND = 500000000;
 
 const transaction = new Transaction();
 
@@ -38,3 +38,5 @@ transaction.add(sendSolInstruction);
 const signature = await sendAndConfirmTransaction(connection, transaction, [
   senderKeypair,
 ]);
+
+console.log("SIGNATURE: ", signature);

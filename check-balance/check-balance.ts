@@ -22,13 +22,13 @@ const checkBalance = async (account: PublicKey) => {
   console.log(`✅ Balance in SOL: ${balanceInSol}`);
 };
 
-const account1 = new PublicKey("tDN8dHGLWsc5ZK1ybsQfSNaFXfHsE5MzwmUVARykxbv");
-checkBalance(account1);
+const account = new PublicKey("4JQRjjw6YitVneNaLqsx8H1GGerTCtEWVNJfe4u4aPj3");
+checkBalance(account);
 
-const connectionMainnet = new Connection(clusterApiUrl("mainnet-beta"));
-console.log(`✅ Connected to Mainnet-Beta !`);
+// const connectionMainnet = new Connection(clusterApiUrl("mainnet-beta"));
+// console.log(`✅ Connected to Mainnet-Beta !`);
 
-const name = "mccann";
-resolve(connectionMainnet, name).then((address) => {
-  checkBalance(address);
-});
+// const name = "mccann";
+// resolve(connectionMainnet, name).then((address) => {
+//   checkBalance(address);
+// });

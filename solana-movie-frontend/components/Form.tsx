@@ -17,7 +17,7 @@ import {
 import * as web3 from "@solana/web3.js";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 
-const MOVIE_REVIEW_PROGRAM_ID = "CenYq6bDRB7p73EjsPEpiYN7uveyPUTdXkDkgUduboaN";
+const MOVIE_REVIEW_PROGRAM_ID = "FhoUw3wij22gWCuBQDk2JRZkM1Hshz8KKt59v4XcbYh9";
 
 export const Form: FC = () => {
   const [title, setTitle] = useState("");
